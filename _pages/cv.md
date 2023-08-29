@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-My CV is available in the following [GitHub repository](https://github.com/joacoh/cv) and you can [download it here](https://github.com/joacoh/cv/blob/main/cv.pdf).
+My CV is available in the following [GitHub repository](https://github.com/joacoh/cv) and you can download it [here](https://joacoh.github.io/files/cv.pdf).
