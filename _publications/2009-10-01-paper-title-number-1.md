@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Event Horizon and Environs (ETHER): A Curated Database for EHT and ngEHT Targets and Science"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: 
+excerpt: 
+date:
+venue: 'Galaxies'
+paperurl: 'https://www.mdpi.com/2075-4434/11/1/15'
+citation: 'Ramakrishnan, V., et al., 2023, <i>Galaxies</i>, 11.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Complete list of authors: Ramakrishnan V., Nagar N., Arratia V., **Hernández-Yévenes J.**, Pesce D.W., Nair D.G., Bandyopadhyay B., Medina-Porcile C.,  Krichbaum T.P., Doeleman S., Ricarte A., Fish V.L., Blackburn L., Falcke H., Bower G., & Natarajan P.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://www.mdpi.com/2075-4434/11/1/15/pdf?version=1673512248)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Ramakrishnan, V., et al., 2023, <i>Galaxies</i>, 11.

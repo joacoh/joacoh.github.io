@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "J. Hernández Yévenes"
+  name             : "J. Hernández-Yévenes"
   avatar           : "profile.png"
   bio              : "M.Sc student at Universidad de Concepción in Astronomy and Astrophysics"
   location         : "Talcahuano, Chile"
   employer         : "Universidad de Concepción"
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
