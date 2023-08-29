@@ -2,7 +2,7 @@
 title: "La nueva generación del Telescopio Horizonte de Eventos (ngEHT) y Chile"
 collection: talks
 type: "Talk"
-permalink: 
+permalink: /talks/talk1
 venue: "Viernes Estelares de Astronomía (Universidad de Concepción)"
 date: 2022-11-04
 location: "Concepción, Chile"
