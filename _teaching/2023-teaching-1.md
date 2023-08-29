@@ -1,0 +1,11 @@
+---
+title: "Radioastronomía"
+collection: teaching
+type: "Undergraduate course (Assistanship)"
+permalink: /teaching/2023-teaching-1
+venue: "Departmento de Astronomía, Universidad de Concepción"
+date: 2023-08-01
+location: "Concepción, Chile"
+---
+
+Undergraduate course about **Radioastronomy** and its most relevant use cases.
