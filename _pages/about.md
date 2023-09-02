@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Who I am?"
+title: "Hey there!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,5 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-I am a dedicated and hard-working researcher seeking new job opportunities and academic training. My expertise in physics and mathematics allows me to carry out new activities with ease. I am proficient in using programming tools, particularly the Python language for data analysis. Highly willing to develop myself in the pedagogical and research area. Adapted to the use of social networks for the dissemination of knowledge and science in general. Great leadership endorsed by my peers, committed to the development of team projects and willing to develop new skills and knowledge.
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/u9K8PUFussrbFbaze0/giphy.gif" width="500"/>
+</div>
+
+---
+
+### 👨‍🚀 About Me <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>:
+I'm an Astrophysicist and Data Scientist <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/giphy.gif" width="30"> from Chile 🇨🇱.
+
+- 🔭 I'm currently working in my M.Sc thesis project to estimate masses of supermassive black holes (SMBH) using WISE calatoged data for the ngEHT Collaboration, as part of the Núcleo Milenio TITANs group.
+
+- 🌱 Constantly learning new Machine Learning and AI tools to use in my thesis, related works and to continue to expand my knowledge.
+
+- 📫 Reach me at my email clicking [here](mailto:jheryev@gmail.com) or in the sidebar!
+
+- 📄 My CV is available [here!](https://joacoh.github.io/cv/)
 
