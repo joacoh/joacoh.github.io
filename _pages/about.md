@@ -15,7 +15,7 @@ redirect_from:
 ---
 
 ### 👨‍🚀 About Me:
-I'm an Astrophysicist and Data Scientist <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/giphy.gif" width="30"> from Chile 🇨🇱.
+I'm an Astronomer <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/giphy.gif" width="30"> from Chile 🇨🇱.
 
 - 🔭 Currently working on my M.Sc. thesis project, estimating the masses of supermassive black holes (SMBH) using WISE cataloged data for the ngEHT Collaboration, as part of the Núcleo Milenio TITANS group.
 
