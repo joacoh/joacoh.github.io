@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Joaquín Hernández-Yévenes"
   avatar           : "profile.png"
-  bio              : "M.Sc student in Astronomy and Astrophysics at Universidad de Concepción"
-  location         : "Talcahuano, Chile"
+  bio              : "Alumnus of Universidad de Concepción, pursuing MSc in Astronomy"
+  location         : "Based in Talcahuano, Chile"
   employer         : "Universidad de Concepción"
   pubmed           : 
   googlescholar    : 
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/jhyevenes/"
+  linkedin         : #"https://www.linkedin.com/in/jhyevenes/"
   orcid            : "http://orcid.org/0000-0001-5845-7538"
   pinterest        :
   soundcloud       :
