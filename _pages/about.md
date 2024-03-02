@@ -17,6 +17,8 @@ redirect_from:
 ### 👨‍🚀 About Me:
 I'm an Astronomer <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/giphy.gif" width="30"> from Chile 🇨🇱.
 
+- 💼 Currently seeking for work opportunities out of academia.
+
 - 🔭 For my MSc thesis, I developed the WISE2MBH algorithm, a crucial part of the ETHER sample to estimate supermassive black hole masses using WISE cataloged data.
 
 - 🌱 Constantly learning new Machine Learning and AI tools to use in my work, related projects, and to continue expanding my knowledge.
