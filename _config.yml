@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Joaquín Hernández-Yévenes"
   avatar           : "profile.png"
-  bio              : "BSc and MSc in Astronomy from Universidad de Concepción"
+  bio              : "MSc in Astronomy from Universidad de Concepción"
   location         : "Based in Talcahuano, Chile"
   employer         : "Universidad de Concepción"
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
