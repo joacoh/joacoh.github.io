@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Portfolio"
-    url: https://www.datascienceportfol.io/joacoh 
-
   - title: "Publications"
     url: /publications/
+
+  - title: "Portfolio"
+    url: https://www.datascienceportfol.io/joacoh 
 
   - title: "Talks"
     url: /talks/    
