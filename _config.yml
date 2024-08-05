@@ -84,9 +84,8 @@ author:
   avatar           : "profile.png"
   bio              : "MSc in Astronomy from Universidad de Concepción"
   location         : "Based in Talcahuano, Chile"
-  employer         : "Universidad de Concepción"
+  employer         : "TITANs (UdeC)"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -104,6 +103,7 @@ author:
   lastfm           :
   linkedin         : "jhyevenes"
   orcid            : "http://orcid.org/0000-0001-5845-7538"
+  googlescholar    : "https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
