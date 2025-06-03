@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Joaquín Hernández-Yévenes"
   avatar           : "profile.png"
-  bio              : "MSc in Astronomy from Universidad de Concepción"
-  location         : "Based in Talcahuano, Chile"
-  employer         : "TITANs (UdeC)"
+  bio              : "PhD(c) in Astrophysics @ Swinburne University of Technology"
+  location         : "Based in Melbourne, Australia"
+  employer         : # "Swinburne University of Technology"
   pubmed           : 
   email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
