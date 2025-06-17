@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Joaquín Hernández-Yévenes"
   avatar           : "profile.png"
-  bio              : "PhD(c) in Astrophysics @ Swinburne University of Technology"
-  location         : "Based in Melbourne, Australia"
-  employer         : # "Swinburne University of Technology"
+  bio              : "PhD(c) in Astrophysics"
+  location         : "Melbourne, Australia"
+  employer         : "Swinburne University of Technology"
   pubmed           : 
   email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
