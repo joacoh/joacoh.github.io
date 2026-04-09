@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "J. Hernández-Yévenes"
+title                    : "Joaquín Hernández-Yévenes"
 title_separator          : "-"
 name                     : &name "Joaquín Hernández-Yévenes"
 description              : &description "personal description"
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Joaquín Hernández-Yévenes"
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   bio              : "PhD(c) in Astrophysics"
   location         : "Melbourne, Australia"
   employer         : "Swinburne University of Technology"
@@ -103,7 +103,7 @@ author:
   lastfm           :
   linkedin         : "jhyevenes"
   orcid            : "http://orcid.org/0000-0001-5845-7538"
-  googlescholar    : "https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
+  googlescholar    : #s"https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
