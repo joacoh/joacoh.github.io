@@ -6,10 +6,11 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+  - /home/
 ---
 
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/u9K8PUFussrbFbaze0/giphy.gif" width="500"/>
+  <img src="https://joacoh.github.io/images/bar.jpeg" width="600"/>
 </div>
 
 ---
@@ -19,9 +20,7 @@ I'm an Astronomer <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/gip
 
 - 💼 Currently a PhD candidate @ Swinburne University of Technology in Melbourne, Australia 🇦🇺.
 
-- 🔭 My main work is related to outflows in galaxies, supermassive black holes, spectral fitting and statistical methods/analysis.
-
-- 🌱 Constantly learning new ML and AI tools to use in my work, related projects, and to continue expanding my knowledge.
+- 🔭 My main work is related to outflows in galaxies, supermassive black holes and statistical methods/analysis.
 
 - 📫 Reach me at my email clicking [here!](mailto:jheryev@gmail.com)
 

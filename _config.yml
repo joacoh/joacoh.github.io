@@ -84,7 +84,7 @@ author:
   avatar           : "profile.jpg"
   bio              : "PhD(c) in Astrophysics"
   location         : "Melbourne, Australia"
-  employer         : "Swinburne University of Technology"
+  employer         : "Swinburne University"
   pubmed           : 
   email            : "jheryev@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -101,7 +101,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "jhyevenes"
+  linkedin         : #"jhyevenes"
   orcid            : "http://orcid.org/0000-0001-5845-7538"
   googlescholar    : #s"https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   pinterest        :
