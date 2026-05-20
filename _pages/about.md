@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Home"
+title: "Welcome!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <div id="header" align="center">
-  <img src="https://joacoh.github.io/images/bar.jpeg" width="600"/>
+  <img src="https://joacoh.github.io/images/bar.jpeg" width="900"/>
 </div>
 
 ---
