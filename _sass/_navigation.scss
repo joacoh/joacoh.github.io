@@ -175,7 +175,6 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
 
   a {
     display: block;
@@ -225,26 +224,17 @@
 
     a {
       position: relative;
+      padding: 0.35em 0.8em;
+      background: mix($background-color, $border-color, 50%);
+      border: 1px solid $primary-color;
+      border-radius: $border-radius;
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: mix(#fff, $primary-color, 50%);
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+      &:hover {
+        background: mix($background-color, $primary-color, 75%);
       }
 
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+      &:before {
+        display: none;
       }
     }
   }
@@ -257,8 +247,8 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: $background-color;
+    border: 1px solid $border-color;
 
     a {
       margin: 0;
@@ -267,7 +257,7 @@
 
       &:hover {
         color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        background: mix($background-color, $primary-color, 75%);
       }
     }
 
@@ -292,7 +282,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: $background-color transparent;
       display: block;
       z-index: 1;
     }

@@ -9,12 +9,6 @@ redirect_from:
   - /home/
 ---
 
-<div id="header" align="center">
-  <img src="https://joacoh.github.io/images/bar.jpeg" width="900"/>
-</div>
-
----
-
 ### 👨‍🚀 About Me :
 I'm an Astronomer <img src="https://media.giphy.com/media/5aYfJYohCSeYgtVlUj/giphy.gif" width="30"> from Chile 🇨🇱.
 

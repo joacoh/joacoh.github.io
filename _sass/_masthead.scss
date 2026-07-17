@@ -11,10 +11,24 @@
           animation-delay: 0.15s;
   z-index: 20;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--masthead-bg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 2.5em 1em 2.5em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {

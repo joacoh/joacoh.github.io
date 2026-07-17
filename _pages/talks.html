@@ -1,16 +1,93 @@
 ---
-layout: archive
+layout: single
 title: "Talks, Posters and Outreach"
 permalink: /talks/
 author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+<style>
+  .talk-section { margin-bottom: 2.5rem; }
+  .talk-section h2 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .talk-item {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  .talk-item summary {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .talk-item summary::-webkit-details-marker { display: none; }
+  .talk-item summary::before {
+    content: "\25B6";
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .talk-item[open] summary::before { transform: rotate(90deg); }
+  .talk-item .talk-details {
+    padding: 0.2rem 1rem 1rem 1.6rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .talk-item .talk-details p { margin: 0.3rem 0; }
+  .talk-item .talk-details .talk-venue { font-style: italic; }
+  .talk-item .talk-details .talk-description {
+    margin-top: 0.5rem;
+    color: #444;
+  }
+  .talk-item .talk-details .talk-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: #2962FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.88rem;
+  }
+  .talk-item .talk-details .talk-link:hover { background: #0039CB; }
+</style>
+
+{% for type_name in site.data.talks.talks %}
+{% assign talks = type_name[1] %}
+{% if talks.size > 0 %}
+<div class="talk-section">
+  <h2>{{ type_name[0] }}</h2>
+  {% for talk in talks %}
+  <details class="talk-item">
+    <summary>{{ talk.title }}</summary>
+    <div class="talk-details">
+      <p class="talk-venue">{{ talk.venue }}, {{ talk.location }} &mdash; {{ talk.date }}</p>
+      {% if talk.description != "" %}
+      <p class="talk-description">{{ talk.description }}</p>
+      {% endif %}
+      {% if talk.link == "here" %}
+      <a class="talk-link" href="{{ talk.url }}">View Talk</a>
+      {% elsif talk.link != "no" and talk.link != "" %}
+      <a class="talk-link" href="{{ talk.link }}" target="_blank">View Talk</a>
+      {% endif %}
+    </div>
+  </details>
+  {% endfor %}
+</div>
+{% endif %}
 {% endfor %}

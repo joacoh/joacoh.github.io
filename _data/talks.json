@@ -1,0 +1,78 @@
+{
+  "talks": {
+    "Academic Talk": [
+      {
+        "title": "Talk Series: Resolving the molecular and ionised gas in the galactic outflow of ESO 484-036",
+        "type": "Academic Talk",
+        "venue": "Multiple venues",
+        "location": "Chile",
+        "date": "March 01, 2026",
+        "raw_date": "2026-03-01",
+        "url": "/talks/2026-03-01-talk",
+        "link": "here",
+        "description": "Academic talk presented at multiple venues (ESO Chile, PUC, UDP and UdeC) during my visit to Chile in March 2026 talking about my first project of my PhD. In this talk I presented the results of the homonimus paper describeing the ionised and molecular phases of the outflow in the starburst galaxy ESO 484-036, all of this as part of the GECKOS collaboration. This talk endedup being my Confirmation of Candidature (CoC) talk for my PhD. The slides shared here correspond to the CoC version of the talk. All confidential information was removed from the slides."
+      },
+      {
+        "title": "Outflows en Galaxias Edge-on: El Caso de ESO484-G036",
+        "type": "Academic Talk",
+        "venue": "I CLASTROEx",
+        "location": "Online",
+        "date": "December 02, 2025",
+        "raw_date": "2025-12-02",
+        "url": "/talks/2025-12-02-talk",
+        "link": "here",
+        "description": "Academic talk presented at the I Congreso Latinoamericano de Astronomía Extragaláctica (CLASTROEx) presenting how outflows are studied in edge-on galaxies, showing the example of ESO484-G036, a nearby starburst galaxy. Here I present analysis of the cold and ionised phases of the outflow using ALMA and VLT/MUSE data. This talk is in Spanish as it was intended to be understood by undergraduate students across Latinamerica."
+      },
+      {
+        "title": "Do SMBH mass estimates agree one to each other?",
+        "type": "Academic Talk",
+        "venue": "TITANs Annual Meeting",
+        "location": "Concepción, Chile",
+        "date": "December 13, 2024",
+        "raw_date": "2024-12-13",
+        "url": "/talks/2024-12-13-talk",
+        "link": "here",
+        "description": "Academic talk presented at the 2024 TITANs Annual Meeting presenting the possible biases between different indirect methods to estimate the masses of SMBHs. Regions of agreement and solutions to recover agreement in specific cases are discussed. WISE2MBH is used a method to compare others to."
+      }
+    ],
+    "Workshop Lead": [
+      {
+        "title": "Statistical methods: Bootstrap, sliding‑window and statistical tests",
+        "type": "Workshop Lead",
+        "venue": "TITANs Annual Meeting",
+        "location": "Concepción, Chile",
+        "date": "December 12, 2024",
+        "raw_date": "2024-12-12",
+        "url": "/talks/2024-12-12-talk",
+        "link": "no",
+        "description": "Workshop done at the 2024 TITANs Annual Meeting presenting how to use bootstrap to test biases on data, how to use a sliding-window algorithm to search trough specific regions of data, the use of the Kolmogórov-Smirnov test applied to astronomy and the combination of all methods fo find statiscally strong results while not worrying about biases in data or sample-size problems."
+      }
+    ],
+    "Conference Poster": [
+      {
+        "title": "Using WISE cataloged data for morphology, bulge fraction and black hole mass estimation",
+        "type": "Conference Poster",
+        "venue": "XVII LARIM",
+        "location": "Montevideo, Uruguay",
+        "date": "November 29, 2023",
+        "raw_date": "2023-11-29",
+        "url": "/talks/2023-11-29-talk",
+        "link": "here",
+        "description": "Scientific poster to be presented at the XVII Latin American Regional IAU Meeting presenting how to use WISE cataloged data to estimate mutliple properties of galaxies and the mass of their Supermassive Black Holes (SMBH) using the WISE2MBH algorithm. WISE2MBH is available at GitHub."
+      }
+    ],
+    "Outreach Talk": [
+      {
+        "title": "La nueva generación del Telescopio Horizonte de Eventos (ngEHT) y Chile",
+        "type": "Outreach Talk",
+        "venue": "Viernes Estelares de Astronomía (Universidad de Concepción)",
+        "location": "Concepción, Chile",
+        "date": "November 04, 2022",
+        "raw_date": "2022-11-04",
+        "url": "/talks/2022-11-04-talk",
+        "link": "https://www.instagram.com/reel/CkjqD5xJFyi/",
+        "description": "Public-oriented talk to show the next-generation Event Horizon Telescope (ngEHT), it's key science and how we are pushing and putting all our effort into that project from Chile. Available at Instagram."
+      }
+    ]
+  }
+}

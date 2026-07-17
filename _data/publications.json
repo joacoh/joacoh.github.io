@@ -1,0 +1,56 @@
+{
+  "first_author": [
+    {
+      "title": "The GECKOS Survey: Resolving the molecular and ionised gas in the galactic outflow of ESO 484-036",
+      "authors_html": "<strong>Hernández-Yévenes, J.</strong>, Fisher, D. B., Mazzilli Ciraulo, B., Davies, R. L., Martig, M., Fraser-McKelvie, A., van de Sande, J., Hayden, M. R., Elliot, R., Emsellem, E., Combes, F., Bolatto, A. D., Bland-Hawthorn, J., Cortese, L., Davis, T. A., Catinella, B., Valenzuela, L. M., Croom, S. M., Fortuné, S. A., Silva-Lima, L. A., López-Cobá, C., Mailvaganam, A., van de Ven, G.",
+      "venue": "arXiv e-prints",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2604.14546",
+      "url": "https://doi.org/10.48550/arXiv.2604.14546",
+      "abstract": "",
+      "key": "2026arXiv260414546H"
+    },
+    {
+      "title": "Using WISE cataloged data for morphology, bulge fraction and black hole mass estimation",
+      "authors_html": "<strong>Hernández-Yévenes, J.</strong>, Nagar, N., Arratia, V., Jarrett, T. H.",
+      "venue": "Revista Mexicana de Astrofísica y Astronomía Serie de Conferencias",
+      "year": "2026",
+      "doi": "10.22201/ia.14052059p.2026.60.223",
+      "url": "https://astronomia.unam.mx/journals/rmxac/article/view/ia.14052059p.2026.60.223",
+      "abstract": "",
+      "key": "LARIMProc"
+    },
+    {
+      "title": "WISE2MBH: a scaling-based algorithm for probing supermassive black hole masses through WISE catalogues",
+      "authors_html": "<strong>Hernández-Yévenes, J.</strong>, Nagar, N., Arratia, V., Jarrett, T. H.",
+      "venue": "MNRAS",
+      "year": "2024",
+      "doi": "10.1093/mnras/stae1372",
+      "url": "https://doi.org/10.1093/mnras/stae1372",
+      "abstract": "",
+      "key": "2024MNRAS.531.4503H"
+    }
+  ],
+  "coauthor": [
+    {
+      "title": "Demographics of black holes at <100 Rg scales: accretion flows, jets, and shadows",
+      "authors_html": "Nair, Dhanya G., Nagar, Neil M., Ramakrishnan, Venkatessh, Wielgus, Maciek, Arratia, Vicente, Krichbaum, Thomas P., Zhang, Xinyue A., Ricarte, Angelo, Silpa, S., Hérnandez-Yévenes, Joaquín, Ford, Nicole M., Bandyopadhyay, Bidisha marriages, Gurwell, Mark, Burridge, Roman, Pesce, Dominic W., Doeleman, Sheperd S., Kim, Jae-Young, Kim, Daewon, Janssen, Michael, von Fellenberg, Sebastiano D., Fromm, Christian M., Lee, Deokhyeong, Falcke, Heino, Wagner, Jan, Bower, Geoffrey C., Baczko, Anne-Kathrin, Kim, Dong-Jin, Akiyama, Kazunori, Asada, Keiichi, Arevalo, Patricia, Bignall, Hayley, Blackburn, Lindy, Broderick, Avery E., Brunthaler, Andreas, Chan, Chi-kwan, Doi, Akihiro wholesaler, Fish, Vincent L., Fomalont, Edward, Gómez, José L., Haggard, Daryl, Hada, Kazuhiro, Herrera-Camus, Rodrigo, Hoak, Daniel trekking, Hughes, David, Hlavacek-Larrondo, Julie, Jorstad, Svetlana, Johnson, Michael D., Kawashima, Tomohisa, Keating, Garrett K., Kharb, Preeti, Koay, Jun Yi, Koyama, Shoko, Kuo, Cheng-Yu, Leigh, Nathan W. C., Lira, Paulina, Lindqvist, Michael, Lobanov, Andrei P., Lo, Wen-Ping, Lu, Ru-Sen, Markoff, Sera, MacDonald, Nicholas R., Martínez-Aldama, Mary Loli, Matthews, Lynn D., Matsushita, Satoki, Mezcua, Mar, Moscibrodzka, Monika, Müller, Hendrik, Nagai, Hiroshi, Nakamura, Masanori, Natarajan, Priyamvada, Narayanan, Gopal, Nowak, Michael A., Olivares Sánchez, Héctor Raúl",
+      "venue": "Proceedings of the 16th EVN Symposium",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2412.20276",
+      "url": "https://doi.org/10.48550/arXiv.2412.20276",
+      "abstract": "",
+      "key": "2024evn..conf...75N"
+    },
+    {
+      "title": "Event Horizon and Environs (ETHER): A Curated Database for EHT and ngEHT Targets and Science",
+      "authors_html": "Ramakrishnan, Venkatessh, Nagar, Neil, Arratia, Vicente, <strong>Hernández-Yévenes, Joaquín</strong>, Pesce, Dominic W., Nair, Dhanya G., Bandyopadhyay, Bidisha, Medina-Porcile, Catalina, Krichbaum, Thomas P., Doeleman, Sheperd, Ricarte, Angelo, Fish, Vincent L., Blackburn, Lindy, Falcke, Heino, Bower, Geoffrey, Natarajan, Priyamvada",
+      "venue": "Galaxies",
+      "year": "2023",
+      "doi": "10.3390/galaxies11010015",
+      "url": "https://doi.org/10.3390/galaxies11010015",
+      "abstract": "",
+      "key": "2023Galax..11...15R"
+    }
+  ]
+}

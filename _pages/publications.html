@@ -1,15 +1,108 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-Here is a list of my already published publications.
+Here is a list of my publications, separated by role. You can also find an up-to-date list on my <strong><a href="http://orcid.org/0000-0001-5845-7538">ORCID</a></strong>.
 
-You can also find an up-to-date list on my <strong><a href="http://orcid.org/0000-0001-5845-7538">ORCID</a></strong>. 
-{% include base_path %}
+<style>
+  .pub-section { margin-bottom: 2.5rem; }
+  .pub-section h2 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .pub-item {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  .pub-item summary {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .pub-item summary::-webkit-details-marker { display: none; }
+  .pub-item summary::before {
+    content: "\25B6";
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .pub-item[open] summary::before { transform: rotate(90deg); }
+  .pub-item .pub-details {
+    padding: 0.2rem 1rem 1rem 1.6rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .pub-item .pub-details p { margin: 0.3rem 0; }
+  .pub-item .pub-details .pub-venue { font-style: italic; }
+  .pub-item .pub-details .pub-abstract {
+    margin-top: 0.5rem;
+    color: #444;
+  }
+  .pub-item .pub-details .pub-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: #2962FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.88rem;
+  }
+  .pub-item .pub-details .pub-link:hover { background: #0039CB; }
+</style>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if site.data.publications.first_author.size > 0 %}
+<div class="pub-section">
+  <h2>First Author Publications</h2>
+  {% for pub in site.data.publications.first_author %}
+  <details class="pub-item">
+    <summary>{{ pub.title }}</summary>
+    <div class="pub-details">
+      <p>{{ pub.authors_html }}</p>
+      <p class="pub-venue">{{ pub.venue }}, {{ pub.year }}</p>
+      {% if pub.abstract != "" %}
+      <p class="pub-abstract">{{ pub.abstract }}</p>
+      {% endif %}
+      {% if pub.url != "" %}
+      <a class="pub-link" href="{{ pub.url }}" target="_blank">Paper</a>
+      {% endif %}
+    </div>
+  </details>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.publications.coauthor.size > 0 %}
+<div class="pub-section">
+  <h2>Co-author Publications</h2>
+  {% for pub in site.data.publications.coauthor %}
+  <details class="pub-item">
+    <summary>{{ pub.title }}</summary>
+    <div class="pub-details">
+      <p>{{ pub.authors_html }}</p>
+      <p class="pub-venue">{{ pub.venue }}, {{ pub.year }}</p>
+      {% if pub.abstract != "" %}
+      <p class="pub-abstract">{{ pub.abstract }}</p>
+      {% endif %}
+      {% if pub.url != "" %}
+      <a class="pub-link" href="{{ pub.url }}" target="_blank">Paper</a>
+      {% endif %}
+    </div>
+  </details>
+  {% endfor %}
+</div>
+{% endif %}
