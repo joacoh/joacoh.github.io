@@ -193,11 +193,16 @@
     height: 100%;
     right: 0;
     padding: 0 0.5rem;
-    border: 0;
+    border: 1px solid $primary-color;
     outline: none;
-    background-color: $primary-color;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: $border-radius;
     color: #fff;
     cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
 
   .visible-links {
@@ -248,15 +253,16 @@
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $background-color;
-    border: 1px solid $border-color;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 
     a {
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      color: $text-color;
 
       &:hover {
-        color: $masthead-link-color-hover;
+        color: $primary-color;
         background: mix($background-color, $primary-color, 75%);
       }
     }

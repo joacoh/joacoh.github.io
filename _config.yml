@@ -10,12 +10,12 @@ locale                   : "en-US"
 title                    : "Joaquín Hernández-Yévenes"
 title_separator          : "-"
 name                     : &name "Joaquín Hernández-Yévenes"
-description              : &description "personal description"
+description              : &description "PhD candidate in Astrophysics at Swinburne University. Researching galactic outflows, supermassive black holes, and statistical methods in astronomy."
 url                      : https://joacoh.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "joacoh/joacoh.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -50,7 +50,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "a6Y-D1wqcb8mLVmz_edEm9Pn6WLMAIryF8m1BMaBlck"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -62,13 +62,17 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : profile.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links:
+    - "https://orcid.org/0000-0001-5845-7538"
+    - "https://scholar.google.com/citations?user=2ipTuEIAAAAJ"
+    - "https://github.com/joacoh"
+    - "https://au.linkedin.com/in/jhyevenes"
 
 
 # Analytics
@@ -101,7 +105,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : #"jhyevenes"
+  linkedin         : "jhyevenes"
   orcid            : "http://orcid.org/0000-0001-5845-7538"
   googlescholar    : #s"https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
   pinterest        :

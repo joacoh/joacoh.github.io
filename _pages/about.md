@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Welcome!"
-excerpt: "About me"
+title: "Joaquín Hernández-Yévenes | Astrophysics PhD Candidate"
+excerpt: "PhD candidate in Astrophysics at Swinburne University. Researching galactic outflows, supermassive black holes, and statistical methods in astronomy."
 author_profile: true
 redirect_from: 
   - /about/

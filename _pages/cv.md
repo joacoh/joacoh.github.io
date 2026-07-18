@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "Academic CV of Joaquín Hernández-Yévenes, PhD candidate in Astrophysics at Swinburne University of Technology."
 permalink: /cv/
 author_profile: true
 redirect_from:
