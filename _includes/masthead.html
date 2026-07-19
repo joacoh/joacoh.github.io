@@ -3,10 +3,10 @@
 <div class="masthead" style="--masthead-bg: url('{{ base_path }}/images/bar.jpeg')">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <a class="masthead__home-link" href="{{ base_path }}/"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a>
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button class="greedy-nav__toggle"><i class="fas fa-bars"></i><i class="fas fa-times"></i></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -16,8 +16,20 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+              {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
   </div>
 </div>

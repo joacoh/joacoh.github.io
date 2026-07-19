@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Theme Variables (CSS Custom Properties)
+   Tokyo Night Cyan (dark) / Tokyo Night Light (light)
+   ========================================================================== */
+
+:root {
+  /* Base colors */
+  --bg: #1a1b26;
+  --bg-alt: #16161e;
+  --fg: #c0caf5;
+  --fg-dark: #a9b1d6;
+  --border: #292e42;
+  --gray: #565f89;
+  --gray-dark: #343b58;
+  --gray-darker: #24283b;
+  --gray-light: #787c99;
+  --gray-lighter: #d5d6db;
+
+  /* Accent colors */
+  --primary: #27A1B9;
+  --primary-hover: #1e8a9f;
+  --success: #9ece6a;
+  --success-hover: #7eb855;
+  --warning: #e0af68;
+  --warning-hover: #b48c53;
+  --danger: #f7768e;
+  --danger-hover: #c55e71;
+  --info: #7aa2f7;
+  --info-hover: #5b82c5;
+
+  /* Code */
+  --code-bg: #0f111a;
+  --code-bg-dark: #0b0d17;
+
+  /* Derived: links */
+  --link-color: #6b98d8;
+  --link-hover: #527abc;
+  --link-visited: #8fb4e0;
+
+  /* Derived: masthead */
+  --masthead-link: #27A1B9;
+  --masthead-link-hover: #1e8a9f;
+  --masthead-button-bg: #24283b;
+  --masthead-button-hover: #1a2735;
+
+  /* Derived: syntax highlight bg */
+  --syntax-highlight-bg: #1f2335;
+}
+
+[data-theme="light"] {
+  /* Base colors */
+  --bg: #e6e7ed;
+  --bg-alt: #d5d6db;
+  --fg: #343b58;
+  --fg-dark: #40434f;
+  --border: #b6b7bf;
+  --gray: #6c6e75;
+  --gray-dark: #40434f;
+  --gray-darker: #343b58;
+  --gray-light: #9a9ba3;
+  --gray-lighter: #f0f0f4;
+
+  /* Accent colors */
+  --primary: #006c86;
+  --primary-hover: #005a70;
+  --success: #33635c;
+  --success-hover: #284d47;
+  --warning: #8f5e15;
+  --warning-hover: #724b11;
+  --danger: #8c4351;
+  --danger-hover: #703641;
+  --info: #2959aa;
+  --info-hover: #204788;
+
+  /* Code */
+  --code-bg: #d5d6db;
+  --code-bg-dark: #c8c9d0;
+
+  /* Derived: links */
+  --link-color: #1f4b80;
+  --link-hover: #163a66;
+  --link-visited: #3d6aab;
+
+  /* Derived: masthead */
+  --masthead-link: #006c86;
+  --masthead-link-hover: #005a70;
+  --masthead-button-bg: #d5d6db;
+  --masthead-button-hover: #c0c1c8;
+
+  /* Derived: syntax highlight bg */
+  --syntax-highlight-bg: #d5d6db;
+}
