@@ -14,12 +14,12 @@ author_profile: true
   .talk-section { margin-bottom: 2.5rem; }
   .talk-section h2 {
     font-size: 1.4rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border);
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
   }
   .talk-item {
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--border);
     border-radius: 4px;
     margin-bottom: 0.5rem;
     overflow: hidden;
@@ -47,25 +47,25 @@ author_profile: true
     padding: 0.2rem 1rem 1rem 1.6rem;
     font-size: 0.92rem;
     line-height: 1.6;
-    color: #c0caf5;
+    color: var(--fg);
   }
   .talk-item .talk-details p { margin: 0.3rem 0; }
   .talk-item .talk-details .talk-venue { font-style: italic; }
   .talk-item .talk-details .talk-description {
     margin-top: 0.5rem;
-    color: #a9b1d6;
+    color: var(--fg-dark);
   }
   .talk-item .talk-details .talk-link {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.3rem 0.8rem;
-    background: #2962FF;
+    background: var(--primary);
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
     font-size: 0.88rem;
   }
-  .talk-item .talk-details .talk-link:hover { background: #0039CB; }
+  .talk-item .talk-details .talk-link:hover { background: var(--primary-hover); }
 </style>
 
 {% for type_name in site.data.talks.talks %}
@@ -81,10 +81,15 @@ author_profile: true
       {% if talk.description != "" %}
       <p class="talk-description">{{ talk.description }}</p>
       {% endif %}
+      {% case type_name[0] %}
+        {% when "Workshop Lead" %}{% assign btn_label = "Workshop" %}
+        {% when "Conference Poster" %}{% assign btn_label = "Poster" %}
+        {% else %}{% assign btn_label = "Talk" %}
+      {% endcase %}
       {% if talk.link == "here" %}
-      <a class="talk-link" href="{{ talk.url }}">View Talk</a>
+      <a class="talk-link" href="{{ talk.url }}">{{ btn_label }}</a>
       {% elsif talk.link != "no" and talk.link != "" %}
-      <a class="talk-link" href="{{ talk.link }}" target="_blank">View Talk</a>
+      <a class="talk-link" href="{{ talk.link }}" target="_blank">{{ btn_label }}</a>
       {% endif %}
     </div>
   </details>

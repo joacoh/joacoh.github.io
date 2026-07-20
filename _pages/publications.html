@@ -12,12 +12,12 @@ Here is a list of my publications, separated by role. You can also find an up-to
   .pub-section { margin-bottom: 2.5rem; }
   .pub-section h2 {
     font-size: 1.4rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border);
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
   }
   .pub-item {
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--border);
     border-radius: 4px;
     margin-bottom: 0.5rem;
     overflow: hidden;
@@ -45,25 +45,25 @@ Here is a list of my publications, separated by role. You can also find an up-to
     padding: 0.2rem 1rem 1rem 1.6rem;
     font-size: 0.92rem;
     line-height: 1.6;
-    color: #c0caf5;
+    color: var(--fg);
   }
   .pub-item .pub-details p { margin: 0.3rem 0; }
   .pub-item .pub-details .pub-venue { font-style: italic; }
   .pub-item .pub-details .pub-abstract {
     margin-top: 0.5rem;
-    color: #a9b1d6;
+    color: var(--fg-dark);
   }
   .pub-item .pub-details .pub-link {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.3rem 0.8rem;
-    background: #2962FF;
+    background: var(--primary);
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
     font-size: 0.88rem;
   }
-  .pub-item .pub-details .pub-link:hover { background: #0039CB; }
+  .pub-item .pub-details .pub-link:hover { background: var(--primary-hover); }
 </style>
 
 {% if site.data.publications.first_author.size > 0 %}
