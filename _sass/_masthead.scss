@@ -65,18 +65,34 @@
 
 .masthead__home-link {
   flex-shrink: 0;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 0.25em;
-  padding: 0.35em 0.8em;
-  background: var(--masthead-button-bg);
-  border: 1px solid var(--primary);
-  border-radius: $border-radius;
-  color: var(--masthead-link);
+  padding: 0.45rem 0.95rem;
+  background-color: var(--masthead-button-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--fg);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.2;
   text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
 
-  &:hover {
-    background: var(--masthead-button-hover);
-    color: var(--masthead-link-hover);
+  i {
+    color: var(--primary);
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--primary);
+    background-color: var(--masthead-button-hover);
+    color: var(--primary);
+    text-decoration: none;
+    transform: translateY(-1px);
   }
 }
 
@@ -86,23 +102,36 @@
 
 .theme-toggle {
   flex-shrink: 0;
-  padding: 0.35em 0.8em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.95rem;
   margin: 0 0.25em;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border);
   outline: none;
   background-color: var(--masthead-button-bg);
-  border-radius: $border-radius;
-  color: var(--masthead-link);
+  border-radius: 999px;
+  color: var(--fg);
   cursor: pointer;
   font: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
+    border-color: var(--primary);
     background-color: var(--masthead-button-hover);
+    color: var(--primary);
+    transform: translateY(-1px);
   }
 
   .fas,
   .far,
   .fab {
-    font-size: 1em;
+    color: var(--primary);
+    font-size: 1rem;
+    transition: color 0.2s ease;
   }
 }

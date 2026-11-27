@@ -72,7 +72,6 @@ social:
     - "https://orcid.org/0000-0001-5845-7538"
     - "https://scholar.google.com/citations?user=2ipTuEIAAAAJ"
     - "https://github.com/joacoh"
-    - "https://au.linkedin.com/in/jhyevenes"
 
 
 # Analytics
@@ -105,9 +104,9 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "jhyevenes"
-  orcid            : "http://orcid.org/0000-0001-5845-7538"
-  googlescholar    : #s"https://scholar.google.com/citations?user=2ipTuEIAAAAJ&hl=es"
+  linkedin         :
+  orcid            : "https://orcid.org/0000-0001-5845-7538"
+  googlescholar    : "https://scholar.google.com/citations?user=2ipTuEIAAAAJ"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -146,8 +145,15 @@ exclude:
   - config
   - gulpfile.js
   - log
+  - markdown_generator
   - node_modules
   - package.json
+  - package-lock.json
+  - generate_pubs_data.py
+  - generate_talks_data.py
+  - talkmap.py
+  - talkmap.ipynb
+  - __pycache__
   - tmp
   - vendor
 keep_files:
@@ -206,6 +212,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sitemap: false
+      noindex: true
   # _pages
   - scope:
       path: ""
@@ -240,6 +248,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: false
+      noindex: true
   # _talks
   - scope:
       path: ""
@@ -267,10 +277,14 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-feed
   - jemoji
 
 

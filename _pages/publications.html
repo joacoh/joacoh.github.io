@@ -54,16 +54,29 @@ Here is a list of my publications, separated by role. You can also find an up-to
     color: var(--fg-dark);
   }
   .pub-item .pub-details .pub-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.3rem 0.8rem;
-    background: var(--primary);
-    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+    padding: 0.4rem 0.95rem;
+    background-color: var(--masthead-button-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--fg);
     text-decoration: none;
-    border-radius: 3px;
     font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
   }
-  .pub-item .pub-details .pub-link:hover { background: var(--primary-hover); }
+  .pub-item .pub-details .pub-link:hover,
+  .pub-item .pub-details .pub-link:focus-visible {
+    border-color: var(--primary);
+    background-color: var(--masthead-button-hover);
+    color: var(--primary);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
 </style>
 
 {% if site.data.publications.first_author.size > 0 %}
