@@ -81,6 +81,8 @@ author_profile: true
   }
 </style>
 
+{% include talkmap.html %}
+
 {% for type_name in site.data.talks.talks %}
 {% assign talks = type_name[1] %}
 {% if talks.size > 0 %}

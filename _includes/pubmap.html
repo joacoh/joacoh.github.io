@@ -1,0 +1,357 @@
+{% assign cit_data = site.data.citations %}
+{% if cit_data and cit_data.nodes and cit_data.nodes.size > 0 %}
+<style>
+  :root {
+    --pubmap-first: #27A1B9;
+    --pubmap-coauthor: #e0af68;
+    --pubmap-citing: #bb9af7;
+    --pubmap-edge: rgba(169, 177, 214, 0.42);
+    --pubmap-edge-active: #27A1B9;
+    --pubmap-surface: var(--bg-alt);
+    --pubmap-card-bg: rgba(26, 27, 38, 0.94);
+    --pubmap-shadow: rgba(0, 0, 0, 0.45);
+  }
+
+  [data-theme="light"] {
+    --pubmap-first: #006c86;
+    --pubmap-coauthor: #b47614;
+    --pubmap-citing: #7c4dff;
+    --pubmap-edge: rgba(52, 59, 88, 0.34);
+    --pubmap-edge-active: #006c86;
+    --pubmap-surface: var(--bg-alt);
+    --pubmap-card-bg: rgba(246, 247, 250, 0.96);
+    --pubmap-shadow: rgba(20, 24, 40, 0.16);
+  }
+
+  .pubmap-wrapper {
+    margin: 1rem 0 2.25rem;
+  }
+
+  .pubmap-container {
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--pubmap-surface);
+  }
+
+  #pubmap-svg {
+    display: block;
+    width: 100%;
+    height: 540px;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+  }
+
+  #pubmap-svg:active {
+    cursor: grabbing;
+  }
+
+  @media (max-width: 640px) {
+    #pubmap-svg {
+      height: 400px;
+    }
+  }
+
+  .pubmap-zoom-controls {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    z-index: 3;
+  }
+
+  .pubmap-zoom-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--fg);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .pubmap-zoom-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--masthead-button-hover);
+  }
+
+  .pubmap-hint {
+    position: absolute;
+    top: 0.65rem;
+    left: 0.75rem;
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    background-color: var(--pubmap-card-bg);
+    border: 1px solid var(--border);
+    color: var(--fg-dark);
+    font-size: 0.72rem;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* Info card for selected paper */
+  .pubmap-info-card {
+    position: absolute;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    max-width: 340px;
+    width: calc(100% - 1.5rem);
+    padding: 0.75rem 0.9rem;
+    border-radius: 7px;
+    background-color: var(--pubmap-card-bg);
+    border: 1px solid var(--border);
+    box-shadow: 0 6px 20px var(--pubmap-shadow);
+    z-index: 4;
+    display: none;
+    backdrop-filter: blur(6px);
+  }
+
+  .pubmap-info-card.is-visible {
+    display: block;
+  }
+
+  .pubmap-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .pubmap-info-badge {
+    display: inline-block;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .pubmap-info-close {
+    background: transparent;
+    border: none;
+    color: var(--fg-dark);
+    font-size: 1.05rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.2rem;
+  }
+
+  .pubmap-info-close:hover {
+    color: var(--primary);
+  }
+
+  .pubmap-info-title {
+    margin: 0 0 0.3rem;
+    font-size: 0.88rem;
+    font-weight: 650;
+    line-height: 1.35;
+    color: var(--fg);
+  }
+
+  .pubmap-info-title a {
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  .pubmap-info-title a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  .pubmap-info-meta {
+    margin: 0.15rem 0;
+    font-size: 0.76rem;
+    color: var(--fg-dark);
+    line-height: 1.4;
+  }
+
+  .pubmap-info-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .pubmap-info-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Bottom legend & controls bar */
+  .pubmap-controls-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    background-color: var(--pubmap-surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .pubmap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .pubmap-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.28rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--fg);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: opacity 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+  }
+
+  .pubmap-filter-btn:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+  }
+
+  .pubmap-filter-btn.is-inactive {
+    opacity: 0.42;
+    text-decoration: line-through;
+  }
+
+  .pubmap-filter-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .pubmap-filter-count {
+    font-size: 0.72rem;
+    color: var(--fg-dark);
+    opacity: 0.8;
+  }
+
+  .pubmap-reset-btn {
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background-color: var(--masthead-button-bg);
+    color: var(--fg);
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
+  }
+
+  .pubmap-reset-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--masthead-button-hover);
+  }
+
+  /* SVG node & link styles */
+  .pubmap-link {
+    stroke: var(--pubmap-edge);
+    stroke-width: 1.2px;
+    fill: none;
+    transition: stroke 0.18s ease, stroke-opacity 0.18s ease, stroke-width 0.18s ease;
+  }
+
+  .pubmap-link.is-highlighted {
+    stroke: var(--pubmap-edge-active);
+    stroke-width: 2px;
+    stroke-opacity: 0.95;
+  }
+
+  .pubmap-link.is-dimmed {
+    stroke-opacity: 0.08;
+  }
+
+  .pubmap-node {
+    cursor: pointer;
+    transition: opacity 0.18s ease;
+  }
+
+  .pubmap-node.is-dimmed {
+    opacity: 0.18;
+  }
+
+  .pubmap-node-ring {
+    fill: none;
+    stroke-width: 1.6px;
+    stroke-opacity: 0.4;
+  }
+
+  .pubmap-node-circle {
+    stroke: var(--bg);
+    stroke-width: 2px;
+    transition: r 0.15s ease;
+  }
+
+  .pubmap-node-label {
+    font-size: 11px;
+    font-weight: 600;
+    fill: var(--fg);
+    paint-order: stroke;
+    stroke: var(--pubmap-surface);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    pointer-events: none;
+    text-anchor: middle;
+  }
+
+  .pubmap-node-label--citing {
+    font-size: 9.5px;
+    font-weight: 500;
+    fill: var(--fg-dark);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .pubmap-node.is-active .pubmap-node-label--citing,
+  .pubmap-node:hover .pubmap-node-label--citing {
+    opacity: 1;
+  }
+</style>
+
+<div class="pubmap-wrapper" aria-label="Interactive citation web of publications">
+  <div class="pubmap-container">
+    <div class="pubmap-hint">Drag nodes &bull; Scroll to zoom &bull; Click a paper for details</div>
+    <div class="pubmap-zoom-controls">
+      <button type="button" class="pubmap-zoom-btn" id="pubmap-zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+      <button type="button" class="pubmap-zoom-btn" id="pubmap-zoom-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+    </div>
+    <svg id="pubmap-svg" role="img" aria-label="Citation network graph"></svg>
+    <div class="pubmap-info-card" id="pubmap-info-card" aria-live="polite"></div>
+    <div class="pubmap-controls-bar">
+      <div class="pubmap-legend" id="pubmap-legend"></div>
+      <button type="button" class="pubmap-reset-btn" id="pubmap-reset" title="Reset view">Reset view</button>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="pubmap-data">
+{{ cit_data | jsonify }}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" crossorigin=""></script>
+<script src="{{ '/assets/js/pubmap.js' | relative_url }}"></script>
+{% endif %}

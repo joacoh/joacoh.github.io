@@ -1,0 +1,78 @@
+# =============================================================================
+# Interactive Talk & Event Map Data
+# =============================================================================
+# Each entry represents a marker on the interactive map at /talks/.
+#
+# Supported categories (determines marker color):
+#   - Academic Talk      (cyan)
+#   - Workshop Lead      (amber)   -- alias: Workshop
+#   - Conference Poster  (violet)  -- alias: Poster
+#   - Outreach Talk      (green)   -- alias: Outreach
+#   - Event              (coral)
+#
+# Option 1: Link an existing talk from _talks/ using `permalink`
+#   Automatically pulls title, date, location, venue, type, and link.
+#   You can optionally override `location`, `venue`, `title`, `date`, or `category`.
+#
+#   - permalink: /talks/2026-07-07-talk
+#     lat: -35.2809
+#     lng: 149.1300
+#
+# Option 2: Add an event (internship, visiting stay, summer school, etc.)
+#   Include `title`, `category: "Event"`, `location`, `lat`, `lng`, and `length`.
+#   Optional fields: `date`, `venue`, `url`, `description`.
+#
+#   - title: "Research Internship"
+#     category: "Event"
+#     venue: "Center for Astrophysics | Harvard & Smithsonian"
+#     location: "Cambridge, MA, USA"
+#     date: "2024"
+#     length: "3 months"
+#     lat: 42.3814
+#     lng: -71.1281
+# =============================================================================
+
+# --- Academic Talks ---
+- permalink: /talks/2026-07-07-talk
+  lat: -35.2809
+  lng: 149.1300
+
+- permalink: /talks/2026-03-01-talk
+  venue: "ESO Chile, PUC & UDP"
+  location: "Santiago, Chile"
+  lat: -33.4489
+  lng: -70.6693
+
+- permalink: /talks/2026-03-01-talk
+  venue: "Universidad de Concepción"
+  location: "Concepción, Chile"
+  lat: -36.8270
+  lng: -73.0498
+
+- permalink: /talks/2024-12-13-talk
+  lat: -36.8270
+  lng: -73.0498
+
+# --- Workshops ---
+- permalink: /talks/2024-12-12-talk
+  lat: -36.8270
+  lng: -73.0498
+
+# --- Conference Posters ---
+- permalink: /talks/2023-11-29-talk
+  lat: -34.9011
+  lng: -56.1645
+
+# --- Outreach Talks ---
+- permalink: /talks/2022-11-04-talk
+  lat: -36.8270
+  lng: -73.0498
+
+# --- Events (update details as needed) ---
+- title: "Research Internship"
+  category: "Event"
+  venue: "Black Hole Initiative | Harvard University"
+  location: "Cambridge, MA, USA"
+  length: "1 months"
+  lat: 42.3814
+  lng: -71.1281

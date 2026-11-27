@@ -2,6 +2,28 @@
   "talks": {
     "Academic Talk": [
       {
+        "title": "GECKOS in the Cold: Resolving the multiphase outflow of the nearby starburst ESO484-036",
+        "type": "Academic Talk",
+        "venue": "ASA 2026",
+        "location": "Canberra, Australia",
+        "date": "July 07, 2026",
+        "raw_date": "2026-07-07",
+        "url": "/talks/2026-07-07-talk",
+        "link": "here",
+        "description": "Academic talk presented at ASA Annual Meeting in Canberra, Australia talking about my first project of my PhD. In this talk I presented the results of the homonimus paper describing the ionised and molecular phases of the outflow in the starburst galaxy ESO 484-036, all of this as part of the GECKOS collaboration. The slides shared here are the same I used for my CoC, since they barely differ."
+      },
+      {
+        "title": "Resolving the multiphase outflow of the nearby starburst ESO484-036",
+        "type": "Academic Talk",
+        "venue": "GECKOS Busy Week 2026",
+        "location": "Online",
+        "date": "June 24, 2026",
+        "raw_date": "2026-06-24",
+        "url": "/talks/2026-06-24-talk",
+        "link": "here",
+        "description": "Academic talk presented at the GECKOS Busy Week. In this talk I presented the results of the homonimus paper describing the ionised and molecular phases of the outflow in the starburst galaxy ESO 484-036, and the early results of PAHs and sodium emission using JWST and VLT/MUSE data. The slides shared here are the same I used for my CoC, since they barely differ."
+      },
+      {
         "title": "Talk Series: Resolving the molecular and ionised gas in the galactic outflow of ESO 484-036",
         "type": "Academic Talk",
         "venue": "Multiple venues",
@@ -10,7 +32,7 @@
         "raw_date": "2026-03-01",
         "url": "/talks/2026-03-01-talk",
         "link": "here",
-        "description": "Academic talk presented at multiple venues (ESO Chile, PUC, UDP and UdeC) during my visit to Chile in March 2026 talking about my first project of my PhD. In this talk I presented the results of the homonimus paper describeing the ionised and molecular phases of the outflow in the starburst galaxy ESO 484-036, all of this as part of the GECKOS collaboration. This talk endedup being my Confirmation of Candidature (CoC) talk for my PhD. The slides shared here correspond to the CoC version of the talk. All confidential information was removed from the slides."
+        "description": "Academic talk presented at multiple venues (ESO Chile, PUC, UDP and UdeC) during my visit to Chile in March 2026 talking about my first project of my PhD. In this talk I presented the results of the homonimus paper describing the ionised and molecular phases of the outflow in the starburst galaxy ESO 484-036, all of this as part of the GECKOS collaboration. This talk endedup being my Confirmation of Candidature (CoC) talk for my PhD. The slides shared here correspond to the CoC version of the talk. All confidential information was removed from the slides."
       },
       {
         "title": "Outflows en Galaxias Edge-on: El Caso de ESO484-G036",

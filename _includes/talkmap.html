@@ -1,0 +1,372 @@
+{% assign map_entries = site.data.talkmap %}
+{% if map_entries and map_entries.size > 0 %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="" />
+
+<style>
+  :root {
+    --talkmap-cat-talk: #27A1B9;
+    --talkmap-cat-workshop: #e0af68;
+    --talkmap-cat-poster: #bb9af7;
+    --talkmap-cat-outreach: #9ece6a;
+    --talkmap-cat-event: #f7768e;
+    --talkmap-surface: var(--bg-alt);
+    --talkmap-popup-bg: var(--bg);
+    --talkmap-popup-shadow: rgba(0, 0, 0, 0.45);
+    --talkmap-cluster-bg: rgba(39, 161, 185, 0.25);
+    --talkmap-cluster-inner: #27A1B9;
+    --talkmap-cluster-fg: #16161e;
+  }
+
+  [data-theme="light"] {
+    --talkmap-cat-talk: #006c86;
+    --talkmap-cat-workshop: #b47614;
+    --talkmap-cat-poster: #7c4dff;
+    --talkmap-cat-outreach: #2e7d32;
+    --talkmap-cat-event: #c93b56;
+    --talkmap-surface: var(--bg-alt);
+    --talkmap-popup-bg: #f6f7fa;
+    --talkmap-popup-shadow: rgba(20, 24, 40, 0.18);
+    --talkmap-cluster-bg: rgba(0, 108, 134, 0.22);
+    --talkmap-cluster-inner: #006c86;
+    --talkmap-cluster-fg: #ffffff;
+  }
+
+  .talkmap-wrapper {
+    margin: 0.75rem 0 2.25rem;
+  }
+
+  .talkmap-container {
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--talkmap-surface);
+  }
+
+  #talkmap {
+    width: 100%;
+    height: 420px;
+    background-color: var(--talkmap-surface);
+    z-index: 1;
+  }
+
+  /* Theme-aware styling for keyless OpenStreetMap tiles */
+  #talkmap .leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(195deg) brightness(92%) contrast(88%) saturate(55%);
+    transition: filter 0.25s ease;
+  }
+
+  [data-theme="light"] #talkmap .leaflet-tile-pane {
+    filter: saturate(65%) brightness(102%) contrast(95%);
+  }
+
+  @media (max-width: 640px) {
+    #talkmap {
+      height: 330px;
+    }
+  }
+
+  .talkmap-controls-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    background-color: var(--talkmap-surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .talkmap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .talkmap-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.28rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--fg);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: opacity 0.18s ease, border-color 0.18s ease, background-color 0.18s ease, transform 0.12s ease;
+  }
+
+  .talkmap-filter-btn:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+  }
+
+  .talkmap-filter-btn.is-inactive {
+    opacity: 0.42;
+    text-decoration: line-through;
+  }
+
+  .talkmap-filter-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .talkmap-filter-count {
+    font-size: 0.72rem;
+    color: var(--fg-dark);
+    opacity: 0.8;
+  }
+
+  .talkmap-reset-btn {
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background-color: var(--masthead-button-bg);
+    color: var(--fg);
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
+  }
+
+  .talkmap-reset-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--masthead-button-hover);
+  }
+
+  /* Custom pin markers */
+  .talkmap-pin-icon {
+    background: transparent;
+    border: none;
+  }
+
+  .talkmap-pin {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2.5px solid var(--bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    transition: transform 0.15s ease;
+  }
+
+  .talkmap-pin-icon:hover .talkmap-pin {
+    transform: scale(1.25);
+  }
+
+  /* Cluster markers */
+  .talkmap-cluster {
+    background-color: var(--talkmap-cluster-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talkmap-cluster span {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--talkmap-cluster-inner);
+    color: var(--talkmap-cluster-fg);
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Theme-aware Leaflet controls & popups */
+  #talkmap .leaflet-control-zoom a {
+    background-color: var(--bg);
+    color: var(--fg);
+    border-color: var(--border);
+  }
+
+  #talkmap .leaflet-control-zoom a:hover {
+    background-color: var(--masthead-button-hover);
+    color: var(--primary);
+  }
+
+  #talkmap .leaflet-control-attribution {
+    background-color: var(--bg);
+    color: var(--fg-dark);
+    opacity: 0.85;
+    font-size: 0.68rem;
+  }
+
+  #talkmap .leaflet-control-attribution a {
+    color: var(--primary);
+  }
+
+  #talkmap .leaflet-popup-content-wrapper,
+  #talkmap .leaflet-popup-tip {
+    background-color: var(--talkmap-popup-bg);
+    color: var(--fg);
+    box-shadow: 0 6px 20px var(--talkmap-popup-shadow);
+    border: 1px solid var(--border);
+  }
+
+  #talkmap .leaflet-popup-content {
+    margin: 0.75rem 0.9rem;
+    min-width: 210px;
+    max-width: 280px;
+    line-height: 1.45;
+  }
+
+  #talkmap .leaflet-popup-close-button {
+    color: var(--fg-dark);
+  }
+
+  #talkmap .leaflet-popup-close-button:hover {
+    color: var(--primary);
+  }
+
+  .talkmap-popup-badge {
+    display: inline-block;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+  }
+
+  .talkmap-popup-title {
+    margin: 0 0 0.35rem;
+    font-size: 0.92rem;
+    font-weight: 650;
+    line-height: 1.35;
+    color: var(--fg);
+  }
+
+  .talkmap-popup-title a {
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  .talkmap-popup-title a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  .talkmap-popup-meta {
+    margin: 0.18rem 0;
+    font-size: 0.8rem;
+    color: var(--fg-dark);
+  }
+
+  .talkmap-popup-meta strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  .talkmap-popup-desc {
+    margin: 0.4rem 0 0;
+    font-size: 0.78rem;
+    color: var(--fg-dark);
+  }
+
+  .talkmap-popup-link {
+    display: inline-block;
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .talkmap-popup-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="talkmap-wrapper" aria-label="Interactive map of talks and events">
+  <div class="talkmap-container">
+    <div id="talkmap"></div>
+    <div class="talkmap-controls-bar">
+      <div class="talkmap-legend" id="talkmap-legend"></div>
+      <button type="button" class="talkmap-reset-btn" id="talkmap-reset" title="Reset map view">Reset view</button>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="talkmap-data">
+[
+{% for entry in map_entries %}
+  {% assign matched_talk = nil %}
+  {% if entry.permalink %}
+    {% assign target_permalink = entry.permalink | remove_first: "" %}
+    {% for t in site.talks %}
+      {% if t.permalink == entry.permalink or t.url == entry.permalink %}
+        {% assign matched_talk = t %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if matched_talk %}
+    {% assign item_title = entry.title | default: matched_talk.title %}
+    {% assign item_category = entry.category | default: matched_talk.type | default: "Academic Talk" %}
+    {% assign item_location = entry.location | default: matched_talk.location %}
+    {% assign item_venue = entry.venue | default: matched_talk.venue %}
+    {% if entry.date %}
+      {% assign item_date = entry.date %}
+    {% elsif matched_talk.date %}
+      {% assign item_date = matched_talk.date | date: "%B %d, %Y" %}
+    {% else %}
+      {% assign item_date = "" %}
+    {% endif %}
+    {% assign item_url = "" %}
+    {% assign item_external = false %}
+    {% if entry.url and entry.url != "" %}
+      {% assign item_url = entry.url %}
+      {% assign item_external = true %}
+    {% elsif matched_talk.link == "here" or matched_talk.link == nil or matched_talk.link == "" %}
+      {% assign item_url = matched_talk.url | relative_url %}
+    {% elsif matched_talk.link != "no" %}
+      {% assign item_url = matched_talk.link %}
+      {% assign item_external = true %}
+    {% endif %}
+  {% else %}
+    {% assign item_title = entry.title | default: "Untitled" %}
+    {% assign item_category = entry.category | default: entry.type | default: "Event" %}
+    {% assign item_location = entry.location | default: "" %}
+    {% assign item_venue = entry.venue | default: "" %}
+    {% assign item_date = entry.date | default: "" %}
+    {% assign item_url = entry.url | default: "" %}
+    {% assign item_external = true %}
+  {% endif %}
+  {% assign item_length = entry.length | default: entry.duration | default: "" %}
+  {% assign item_desc = entry.description | default: "" %}
+  {
+    "title": {{ item_title | jsonify }},
+    "category": {{ item_category | jsonify }},
+    "location": {{ item_location | jsonify }},
+    "venue": {{ item_venue | jsonify }},
+    "date": {{ item_date | jsonify }},
+    "length": {{ item_length | jsonify }},
+    "description": {{ item_desc | jsonify }},
+    "url": {{ item_url | jsonify }},
+    "external": {{ item_external | jsonify }},
+    "lat": {{ entry.lat | jsonify }},
+    "lng": {{ entry.lng | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
+</script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+<script src="{{ '/assets/js/talkmap.js' | relative_url }}"></script>
+{% endif %}

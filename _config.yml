@@ -130,6 +130,7 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .env
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
@@ -150,6 +151,7 @@ exclude:
   - package.json
   - package-lock.json
   - generate_pubs_data.py
+  - generate_citations_data.py
   - generate_talks_data.py
   - talkmap.py
   - talkmap.ipynb

@@ -1,0 +1,748 @@
+{
+  "generated_at": "2026-11-27",
+  "source": "NASA ADS",
+  "nodes": [
+    {
+      "id": "2026arXiv260414546H",
+      "title": "The GECKOS Survey: Resolving the molecular and ionised gas in the galactic outflow of ESO 484-036",
+      "short_label": "Hernández-Yévenes+(2026)",
+      "authors": "Hernández-Yévenes, J., Fisher, D. B., Mazzilli Ciraulo, B., Davies, R. L., Martig, M., Fraser-McKelvie, A., van de Sande, J., Hayden, M. R., Elliot, R., Emsellem, E., Combes, F., Bolatto, A. D., Bland-Hawthorn, J., Cortese, L., Davis, T. A., Catinella, B., Valenzuela, L. M., Croom, S. M., Fortuné, S. A., Silva-Lima, L. A., López-Cobá, C., Mailvaganam, A., van de Ven, G.",
+      "venue": "arXiv e-prints",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2604.14546",
+      "url": "https://doi.org/10.48550/arXiv.2604.14546",
+      "role": "first_author",
+      "citation_count": 2
+    },
+    {
+      "id": "2024MNRAS.531.4503H",
+      "title": "WISE2MBH: a scaling-based algorithm for probing supermassive black hole masses through WISE catalogues",
+      "short_label": "Hernández-Yévenes+(2024)",
+      "authors": "Hernández-Yévenes, J., Nagar, N., Arratia, V., Jarrett, T. H.",
+      "venue": "MNRAS",
+      "year": "2024",
+      "doi": "10.1093/mnras/stae1372",
+      "url": "https://doi.org/10.1093/mnras/stae1372",
+      "role": "first_author",
+      "citation_count": 10
+    },
+    {
+      "id": "2024evn..conf...75N",
+      "title": "Demographics of black holes at <100 Rg scales: accretion flows, jets, and shadows",
+      "short_label": "Nair+(2024)",
+      "authors": "Nair, Dhanya G., Nagar, Neil M., Ramakrishnan, Venkatessh, Wielgus, Maciek, Arratia, Vicente, Krichbaum, Thomas P., Zhang, Xinyue A., Ricarte, Angelo, Silpa, S., Hernández-Yévenes, Joaquín, Ford, Nicole M., Bandyopadhyay, Bidisha marriages, Gurwell, Mark, Burridge, Roman, Pesce, Dominic W., Doeleman, Sheperd S., Kim, Jae-Young, Kim, Daewon, Janssen, Michael, von Fellenberg, Sebastiano D., Fromm, Christian M., Lee, Deokhyeong, Falcke, Heino, Wagner, Jan, Bower, Geoffrey C., Baczko, Anne-Kathrin, Kim, Dong-Jin, Akiyama, Kazunori, Asada, Keiichi, Arevalo, Patricia, Bignall, Hayley, Blackburn, Lindy, Broderick, Avery E., Brunthaler, Andreas, Chan, Chi-kwan, Doi, Akihiro wholesaler, Fish, Vincent L., Fomalont, Edward, Gómez, José L., Haggard, Daryl, Hada, Kazuhiro, Herrera-Camus, Rodrigo, Hoak, Daniel trekking, Hughes, David, Hlavacek-Larrondo, Julie, Jorstad, Svetlana, Johnson, Michael D., Kawashima, Tomohisa, Keating, Garrett K., Kharb, Preeti, Koay, Jun Yi, Koyama, Shoko, Kuo, Cheng-Yu, Leigh, Nathan W. C., Lira, Paulina, Lindqvist, Michael, Lobanov, Andrei P., Lo, Wen-Ping, Lu, Ru-Sen, Markoff, Sera, MacDonald, Nicholas R., Martínez-Aldama, Mary Loli, Matthews, Lynn D., Matsushita, Satoki, Mezcua, Mar, Moscibrodzka, Monika, Müller, Hendrik, Nagai, Hiroshi, Nakamura, Masanori, Natarajan, Priyamvada, Narayanan, Gopal, Nowak, Michael A., Olivares Sánchez, Héctor Raúl",
+      "venue": "Proceedings of the 16th EVN Symposium",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2412.20276",
+      "url": "https://doi.org/10.48550/arXiv.2412.20276",
+      "role": "coauthor",
+      "citation_count": 9
+    },
+    {
+      "id": "2023Galax..11...15R",
+      "title": "Event Horizon and Environs (ETHER): A Curated Database for EHT and ngEHT Targets and Science",
+      "short_label": "Ramakrishnan+(2023)",
+      "authors": "Ramakrishnan, Venkatessh, Nagar, Neil, Arratia, Vicente, Hernández-Yévenes, Joaquín, Pesce, Dominic W., Nair, Dhanya G., Bandyopadhyay, Bidisha, Medina-Porcile, Catalina, Krichbaum, Thomas P., Doeleman, Sheperd, Ricarte, Angelo, Fish, Vincent L., Blackburn, Lindy, Falcke, Heino, Bower, Geoffrey, Natarajan, Priyamvada",
+      "venue": "Galaxies",
+      "year": "2023",
+      "doi": "10.3390/galaxies11010015",
+      "url": "https://doi.org/10.3390/galaxies11010015",
+      "role": "coauthor",
+      "citation_count": 32
+    },
+    {
+      "id": "2026arXiv261115884R",
+      "title": "A statistical study of ionized outflows in low-mass galaxies from DESI DR1",
+      "short_label": "Romano+(2026)",
+      "authors": "Romano, Michael, Saintonge, Amélie, Circosta, Chiara et al.",
+      "venue": "arXiv e-prints",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2611.15884",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv261115884R",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026Ap&SS.371..123D",
+      "title": "Galactic outflows and star-formation quenching: a JWST perspective",
+      "short_label": "Davies+(2026)",
+      "authors": "Davies, Rebecca L., Belli, Sirio",
+      "venue": "Astrophysics and Space Science",
+      "year": "2026",
+      "doi": "10.1007/s10509-026-04655-4",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026Ap&SS.371..123D",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024SPIE13092E..2DJ",
+      "title": "The Black Hole Explorer: motivation and vision",
+      "short_label": "Johnson+(2024)",
+      "authors": "Johnson, Michael D., Akiyama, Kazunori, Baturin, Rebecca et al.",
+      "venue": "Space Telescopes and Instrumentation 2024: Optical, Infrared, and Millimeter Wave",
+      "year": "2024",
+      "doi": "10.1117/12.3019835",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024SPIE13092E..2DJ",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025A&A...701A..48D",
+      "title": "NGC 6860, Mrk 915, and MCG -01-24-012: I. Spatial anticorrelation between cold molecular and ionized gas distributions in Seyfert galaxies",
+      "short_label": "Dall'Agnol de Oliveira+(2025)",
+      "authors": "Dall'Agnol de Oliveira, Bruno, Storchi-Bergmann, Thaisa, Nagar, Neil et al.",
+      "venue": "Astronomy and Astrophysics",
+      "year": "2025",
+      "doi": "10.1051/0004-6361/202452993",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025A&A...701A..48D",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025ApJ...985...41Z",
+      "title": "Accessing a New Population of Supermassive Black Holes with Extensions to the Event Horizon Telescope",
+      "short_label": "Zhang+(2025)",
+      "authors": "Zhang, Xinyue Alice, Ricarte, Angelo, Pesce, Dominic W. et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2025",
+      "doi": "10.3847/1538-4357/adbd45",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...985...41Z",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025ApJ...978...77B",
+      "title": "Multiwavelength Constraints on the Local Black Hole Occupation Fraction",
+      "short_label": "Burke+(2025)",
+      "authors": "Burke, Colin J., Natarajan, Priyamvada, Baldassare, Vivienne F. et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2025",
+      "doi": "10.3847/1538-4357/ad94d9",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...978...77B",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026ApJ...998...48P",
+      "title": "Tracking the Assembly of Supermassive Black Holes: A Comparison of Diverse Models across Cosmic Time",
+      "short_label": "Porras-Valverde+(2026)",
+      "authors": "Porras-Valverde, Antonio J., Ricarte, Angelo, Natarajan, Priyamvada et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2026",
+      "doi": "10.3847/1538-4357/ae2fb1",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ...998...48P",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026ApJ..1008...30B",
+      "title": "Supermassive Black Hole Assembly from Heavy Seeds with Dynamical Friction in the BRAHMA Simulations: Implications for JWST, LISA, and the Local Universe",
+      "short_label": "Bhowmick+(2026)",
+      "authors": "Bhowmick, Aklant K., Blecha, Laura, Torrey, Paul et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2026",
+      "doi": "10.3847/1538-4357/ae90a2",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1008...30B",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026A&A...708A.220C",
+      "title": "A new sample of faint Blazar cAndidates with Strong opticAl variabiLiTy (BASALT)",
+      "short_label": "Casadei+(2026)",
+      "authors": "Casadei, Samantha, Raiteri, Claudia M., Carnerero, Maria I. et al.",
+      "venue": "Astronomy and Astrophysics",
+      "year": "2026",
+      "doi": "10.1051/0004-6361/202556965",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026A&A...708A.220C",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026ApJ..1000..173P",
+      "title": "Bridging Scales: Modeling Suppressed Bondi Accretion on Black Holes and Its Impact on Galaxy Growth",
+      "short_label": "Porras-Valverde+(2026)",
+      "authors": "Porras-Valverde, Antonio J., Natarajan, Priyamvada, Ricarte, Angelo et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2026",
+      "doi": "10.3847/1538-4357/ae47fd",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1000..173P",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026ARep...70..653A",
+      "title": "An Analytical Study on the Co-Evolution of Central Black Holes and Globular Clusters System",
+      "short_label": "Abdullah+(2026)",
+      "authors": "Abdullah, Ahmed H., Mohammed Ali, Israa A., Alsaberi, R. Z. E.",
+      "venue": "Astronomy Reports",
+      "year": "2026",
+      "doi": "10.1134/S1063772926700769",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026ARep...70..653A",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025ApJ...983..169Y",
+      "title": "Multifrequency Very Long Baseline Interferometry Study of Emission and Absorption in the Two-sided Jets of NGC 3998",
+      "short_label": "Yan+(2025)",
+      "authors": "Yan, Xi, Cui, Lang, Ho, Luis C.",
+      "venue": "The Astrophysical Journal",
+      "year": "2025",
+      "doi": "10.3847/1538-4357/adc003",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...983..169Y",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025ApJ...990..191W",
+      "title": "Inside the Stagnation Radius of the Nearest Billion-solar-mass Black Hole",
+      "short_label": "Wrobel+(2025)",
+      "authors": "Wrobel, J. M., Pesce, D. W., Nyland, K. E.",
+      "venue": "The Astrophysical Journal",
+      "year": "2025",
+      "doi": "10.3847/1538-4357/adfa93",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...990..191W",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026MNRAS.548ag566G",
+      "title": "Image plane models for AGN jets at horizon scale",
+      "short_label": "Gómez-Miller+(2026)",
+      "authors": "Gómez-Miller, Brissa, Gammie, Charles, Loinard, Laurent",
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "year": "2026",
+      "doi": "10.1093/mnras/stag566",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.548ag566G",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025ApJ...981..126F",
+      "title": "Tracking X-Ray Variability in Next-generation EHT Low-luminosity Active Galactic Nucleus Targets",
+      "short_label": "Ford+(2025)",
+      "authors": "Ford, Nicole M., Nowak, Michael, Ramakrishnan, Venkatessh et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2025",
+      "doi": "10.3847/1538-4357/adae0f",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...981..126F",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026MNRAS.551g1580Z",
+      "title": "Beyond Sgr A* and M87*: sub-microarcsecond black hole shadow detection via lunar-based extremely long baseline interferometry",
+      "short_label": "Zhao+(2026)",
+      "authors": "Zhao, Shan-Shan, Lu, Ru-Sen, Liu, Lei et al.",
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "year": "2026",
+      "doi": "10.1093/mnras/stag1580",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.551g1580Z",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026arXiv261020961P",
+      "title": "A model for the image structure and spectral energy distribution of relativistic jets",
+      "short_label": "Pesce+(2026)",
+      "authors": "Pesce, Dominic W., Narayan, Ramesh, Tsunetoe, Yuh",
+      "venue": "arXiv e-prints",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2610.20961",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv261020961P",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025NewPh.245..102R",
+      "title": "GIS-based G × E modeling of maize hybrids through enviromic markers engineering",
+      "short_label": "Resende+(2025)",
+      "authors": "Resende, Rafael T., Xavier, Alencar, Silva, Pedro Italo T. et al.",
+      "venue": "New Phytologist",
+      "year": "2025",
+      "doi": "10.1111/nph.19951",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025NewPh.245..102R",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026aask.bookE.209C",
+      "title": "Enhancing VLBI Capability with the SKA-Mid and the Jingdong 120-m Radio Telescope",
+      "short_label": "Chen+(2026)",
+      "authors": "Chen, Wen, Yang, Jun, Li, Zhixuan et al.",
+      "venue": "Advancing Astrophysics with the SKA - II",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2606.28722",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026aask.bookE.209C",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024arXiv241201904B",
+      "title": "Advancing Black Hole Imaging with Space-Based Interferometry",
+      "short_label": "Ben Zineb+(2024)",
+      "authors": "Ben Zineb, Yassine, Ozel, Feryal, Psaltis, Dimitrios",
+      "venue": "arXiv e-prints",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2412.01904",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv241201904B",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024arXiv241002986T",
+      "title": "Mid-Range Science Objectives for the Event Horizon Telescope",
+      "short_label": "The Event Horizon Telescope Collaboration(2024)",
+      "authors": "The Event Horizon Telescope Collaboration",
+      "venue": "arXiv e-prints",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2410.02986",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv241002986T",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2023Galax..11...61J",
+      "title": "Key Science Goals for the Next-Generation Event Horizon Telescope",
+      "short_label": "Johnson+(2023)",
+      "authors": "Johnson, Michael D., Akiyama, Kazunori, Blackburn, Lindy et al.",
+      "venue": "Galaxies",
+      "year": "2023",
+      "doi": "10.3390/galaxies11030061",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023Galax..11...61J",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024AstHe.117..747A",
+      "title": "Prospects for Space VLBI Astronomy Missions in 2040s",
+      "short_label": "Akiyama+(2024)",
+      "authors": "Akiyama, Kazunori, Honma, Mareki",
+      "venue": "Astronomical Herald",
+      "year": "2024",
+      "doi": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024AstHe.117..747A",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024ApJ...973..100K",
+      "title": "Mapping the Distribution of the Magnetic Field Strength along the NGC 315 Jet",
+      "short_label": "Kino+(2024)",
+      "authors": "Kino, Motoki, Ro, Hyunwook, Takahashi, Masaaki et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2024",
+      "doi": "10.3847/1538-4357/ad639f",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...973..100K",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2023Galax..11..107D",
+      "title": "Reference Array and Design Consideration for the Next-Generation Event Horizon Telescope",
+      "short_label": "Doeleman+(2023)",
+      "authors": "Doeleman, Sheperd S., Barrett, John, Blackburn, Lindy et al.",
+      "venue": "Galaxies",
+      "year": "2023",
+      "doi": "10.3390/galaxies11050107",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023Galax..11..107D",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024ApJ...960....1L",
+      "title": "A Centiparsec-scale Compact Radio Core in the Nearby Galaxy M60",
+      "short_label": "Li+(2024)",
+      "authors": "Li, Xiaofeng, Yang, Jun, Cheng, Xiaopeng et al.",
+      "venue": "The Astrophysical Journal",
+      "year": "2024",
+      "doi": "10.3847/1538-4357/ad0be6",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...960....1L",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025A&A...695A.118B",
+      "title": "Jet formation studies in AGN: A search for new targets",
+      "short_label": "Boccardi+(2025)",
+      "authors": "Boccardi, B., Ricci, L., Madika, E. et al.",
+      "venue": "Astronomy and Astrophysics",
+      "year": "2025",
+      "doi": "10.1051/0004-6361/202453138",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.118B",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026A&A...711A.293H",
+      "title": "Towards direct imaging and orbital parameter estimation of supermassive black hole binaries with spaceborne VLBI",
+      "short_label": "Hudson+(2026)",
+      "authors": "Hudson, B., Gurvits, L. I., Mooij, E. et al.",
+      "venue": "Astronomy and Astrophysics",
+      "year": "2026",
+      "doi": "10.1051/0004-6361/202558054",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026A&A...711A.293H",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026PASP..138i4103H",
+      "title": "Supermassive Black Hole Binaries in the Multi-messenger Context of Ground and Spaceborne VLBI",
+      "short_label": "Hudson+(2026)",
+      "authors": "Hudson, Ben, Gurvits, Leonid I., D'Orazio, Daniel J. et al.",
+      "venue": "Publications of the Astronomical Society of the Pacific",
+      "year": "2026",
+      "doi": "10.1088/1538-3873/aea2d1",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026PASP..138i4103H",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026ApJ..1002...34F",
+      "title": "Modeling Targets and Optimal Frequencies for Imaging the Shadows of Nearby Supermassive Black Holes",
+      "short_label": "Faggert+(2026)",
+      "authors": "Faggert, J. Cole, Özel, Feryal, Psaltis, Dimitrios",
+      "venue": "The Astrophysical Journal",
+      "year": "2026",
+      "doi": "10.3847/1538-4357/ae29ef",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1002...34F",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2025A&A...695A..72O",
+      "title": "Keplerian molecular gas disk and black hole mass of NGC 4751",
+      "short_label": "Osorno+(2025)",
+      "authors": "Osorno, J., Nagar, N., Richtler, T. et al.",
+      "venue": "Astronomy and Astrophysics",
+      "year": "2025",
+      "doi": "10.1051/0004-6361/202349086",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A..72O",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026arXiv260830042T",
+      "title": "Advancing Fundamental Physics and Cosmology with high-resolution X-ray imaging",
+      "short_label": "Turriziani+(2026)",
+      "authors": "Turriziani, Sara, Marshall, Herman L., Haggard, Daryl et al.",
+      "venue": "arXiv e-prints",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2608.30042",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260830042T",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024SPIE13092E..2EA",
+      "title": "The Japanese vision for the Black Hole Explorer mission",
+      "short_label": "Akiyama+(2024)",
+      "authors": "Akiyama, Kazunori, Niinuma, Kotaro, Hada, Kazuhiro et al.",
+      "venue": "Space Telescopes and Instrumentation 2024: Optical, Infrared, and Millimeter Wave",
+      "year": "2024",
+      "doi": "10.1117/12.3019968",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024SPIE13092E..2EA",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026PASP..138i4102A",
+      "title": "Resolving Nearby Supermassive Black Holes with the Black Hole Explorer",
+      "short_label": "Akiyama+(2026)",
+      "authors": "Akiyama, Yuto, Akiyama, Kazunori, Pesce, Dominic W. et al.",
+      "venue": "Publications of the Astronomical Society of the Pacific",
+      "year": "2026",
+      "doi": "10.1088/1538-3873/ae9ca4",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026PASP..138i4102A",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026OJAp....972040C",
+      "title": "Ring Position Angles and Spin in M87* and Sgr A*",
+      "short_label": "Conroy+(2026)",
+      "authors": "Conroy, Nicholas S., Bauböck, Michi, Bernshteyn, Vadim et al.",
+      "venue": "The Open Journal of Astrophysics",
+      "year": "2026",
+      "doi": "10.33232/001c.172040",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026OJAp....972040C",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026JCAP...08..055H",
+      "title": "Reshaping the inner shadow of a Kerr black hole by a torn accretion disk",
+      "short_label": "Hu+(2026)",
+      "authors": "Hu, Shiyang, Li, Dan, Deng, Chen et al.",
+      "venue": "Journal of Cosmology and Astroparticle Physics",
+      "year": "2026",
+      "doi": "10.1088/1475-7516/2026/08/055",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026JCAP...08..055H",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026PASP..138h4104C",
+      "title": "First Very Long Baseline Interferometry Fringe Detection at 690 GHz",
+      "short_label": "Chen+(2026)",
+      "authors": "Chen, Ming-Tang, Crew, Geoffrey B., Bintley, Dan et al.",
+      "venue": "Publications of the Astronomical Society of the Pacific",
+      "year": "2026",
+      "doi": "10.1088/1538-3873/ae92b6",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026PASP..138h4104C",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2026SPIE14153E..19R",
+      "title": "SHARPEx: the first space-to-space VLBI experiment",
+      "short_label": "Roelofs+(2026)",
+      "authors": "Roelofs, Freek, Brinkerink, Christiaan, Catalan Artigas, Albert et al.",
+      "venue": "Radio Telescopes, Technologies, and Methods",
+      "year": "2026",
+      "doi": "10.1117/12.3104732",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026SPIE14153E..19R",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2023arXiv231110056K",
+      "title": "A Collection of German Science Interests in the Next Generation Very Large Array",
+      "short_label": "Kadler+(2023)",
+      "authors": "Kadler, M., Riechers, D. A., Agarwal, J. et al.",
+      "venue": "arXiv e-prints",
+      "year": "2023",
+      "doi": "10.48550/arXiv.2311.10056",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv231110056K",
+      "role": "citing",
+      "citation_count": 0
+    },
+    {
+      "id": "2024AJ....168..130R",
+      "title": "First Very Long Baseline Interferometry Detections at 870 μm",
+      "short_label": "Raymond+(2024)",
+      "authors": "Raymond, Alexander W., Doeleman, Sheperd S., Asada, Keiichi et al.",
+      "venue": "The Astronomical Journal",
+      "year": "2024",
+      "doi": "10.3847/1538-3881/ad5bdb",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024AJ....168..130R",
+      "role": "citing",
+      "citation_count": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "2026arXiv261115884R",
+      "target": "2026arXiv260414546H"
+    },
+    {
+      "source": "2026Ap&SS.371..123D",
+      "target": "2026arXiv260414546H"
+    },
+    {
+      "source": "2024evn..conf...75N",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2024SPIE13092E..2DJ",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2025A&A...701A..48D",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2025ApJ...985...41Z",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2025ApJ...978...77B",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2026ApJ...998...48P",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2026ApJ..1008...30B",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2026A&A...708A.220C",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2026ApJ..1000..173P",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2026ARep...70..653A",
+      "target": "2024MNRAS.531.4503H"
+    },
+    {
+      "source": "2025ApJ...983..169Y",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2025ApJ...985...41Z",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2025ApJ...990..191W",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2026MNRAS.548ag566G",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2025ApJ...981..126F",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2026MNRAS.551g1580Z",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2026arXiv261020961P",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2025NewPh.245..102R",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2026aask.bookE.209C",
+      "target": "2024evn..conf...75N"
+    },
+    {
+      "source": "2024arXiv241201904B",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024arXiv241002986T",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024evn..conf...75N",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024SPIE13092E..2DJ",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2025ApJ...983..169Y",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2023Galax..11...61J",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024AstHe.117..747A",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024ApJ...973..100K",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2023Galax..11..107D",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024ApJ...960....1L",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2025ApJ...985...41Z",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024MNRAS.531.4503H",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026ApJ...998...48P",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2025A&A...695A.118B",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026A&A...711A.293H",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026MNRAS.548ag566G",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2025ApJ...981..126F",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026ApJ..1000..173P",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026PASP..138i4103H",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026ApJ..1002...34F",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2025A&A...695A..72O",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026MNRAS.551g1580Z",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026arXiv260830042T",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024SPIE13092E..2EA",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026PASP..138i4102A",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026OJAp....972040C",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026JCAP...08..055H",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026PASP..138h4104C",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026SPIE14153E..19R",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2026arXiv261020961P",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2023arXiv231110056K",
+      "target": "2023Galax..11...15R"
+    },
+    {
+      "source": "2024AJ....168..130R",
+      "target": "2023Galax..11...15R"
+    }
+  ]
+}
